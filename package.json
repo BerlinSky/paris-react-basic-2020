@@ -13,7 +13,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
+      "pre-commit-backup": "pretty-quick --staged && npm run lint && npm run test",
+      "pre-commit": "pretty-quick --staged && npm run lint"
     }
   },
   "author": "",

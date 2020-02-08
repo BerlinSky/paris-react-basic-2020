@@ -1,14 +1,23 @@
 import React from 'react'
-import { hot } from 'react-hot-loader'
+// import { hot } from 'react-hot-loader'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Hello World.</h1>
-      </div>
-    )
-  }
-}
+const App = React.createElement(
+  'div',
+  { className: 'siteLayout' },
+  'Baseline Site',
+  'Just a starting point'
+)
 
-export default hot(module)(App)
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>Hello World.</h1>
+//         { elm }
+//       </div>
+//     )
+//   }
+// }
+
+// export default hot(module)(App)
+export default App
