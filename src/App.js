@@ -1,6 +1,11 @@
 import React from 'react'
 // import { hot } from 'react-hot-loader'
 
+// const App = React.createElement('div', {
+//   className: 'siteLayout',
+//   children: ['Baseline Site', 'Just a starting point']
+// })
+
 const App = React.createElement(
   'div',
   { className: 'siteLayout' },
