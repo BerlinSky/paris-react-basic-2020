@@ -1,12 +1,12 @@
 {
-  "name": "react-boilerplate",
+  "name": "paris-react-starter",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.prod.js",
+    "start": "npm run dev -- --hot",
     "dev": "webpack-dev-server --open --config webpack.config.dev.js",
-    "dev:hot": "npm run dev -- --hot",
+    "build": "webpack --config webpack.config.prod.js",
     "test": "jest",
     "format": "pretty-quick",
     "lint": "eslint ./"
@@ -20,13 +20,13 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avanslaars/egghead-react-boilerplate.git"
+    "url": ""
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/avanslaars/egghead-react-boilerplate/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/avanslaars/egghead-react-boilerplate#readme",
+  "homepage": "",
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
