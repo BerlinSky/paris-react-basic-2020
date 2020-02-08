@@ -33,7 +33,7 @@ const App = React.createElement(
   'div',
   { className: 'siteLayout' },
   'Baseline Site',
-  'Just a starting point'
+  ' Just a starting point'
 )
 
 // class App extends React.Component {
