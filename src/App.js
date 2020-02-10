@@ -2,59 +2,42 @@ import React from 'react'
 import { PropTypes } from 'prop-types'
 // import { hot } from 'react-hot-loader'
 
-// # 11: Compose and propTypes validation:
-const Baseline = props => <div>{props.children}</div>
+// #12: Fragment
+function Baseline({ title }) {
+  return (
+    <>
+      <h1>The site is called {title}</h1>
+      <div>Let us set the site up</div>
+    </>
+  )
+}
+
+Baseline.propTypes = {
+  title: PropTypes.string
+}
 
 const App = (
   <div className="fancyClass">
-    <Baseline>Baseline Site 10 a</Baseline>
-    <Baseline>Baseline Site 10 b</Baseline>
-    <Baseline>
-      <div>Nested Site Info</div>
-      <Baseline>Child baseline site 10</Baseline>
-    </Baseline>
+    <Baseline title="Baseline">Baseline Site 11</Baseline>
   </div>
 )
 
-Baseline.propTypes = {
-  children: PropTypes.string
-}
-// # 10: Compose and nest:
-// const Baseline = props => <div>{props.content}</div>
+// # 11: Compose and propTypes validation:
+// const Baseline = props => <div>{props.children}</div>
 
 // const App = (
 //   <div className="fancyClass">
-//     <Baseline content="Baseline Site 10"/>
+//     <Baseline>Baseline Site 10 a</Baseline>
+//     <Baseline>Baseline Site 10 b</Baseline>
+//     <Baseline>
+//       <div>Nested Site Info</div>
+//       <Baseline>Child baseline site 10</Baseline>
+//     </Baseline>
 //   </div>
 // )
 
-// # 9: Override the props.className:
-// const props = {
-//   className: 'siteLayout',
-//   children: 'Baselisne Site 8'
-// }
-// const App = (
-//   <div {...props} className="fancyClass">
-//     New Baseline Site
-//   </div>
-// )
-
-// // # 8
-// const props = {
-//   className: 'siteLayout',
-//   children: 'Baselise Site 8'
-// }
-// const App = <div { ...props } />
-
-// class App extends React.Component {
-//   render() {
-//     return (
-//       <div>
-//         <h1>Hello World.</h1>
-//       </div>
-//     )
-//   }
+// Baseline.propTypes = {
+//   children: PropTypes.string
 // }
 
-// export default hot(module)(App)
 export default App
